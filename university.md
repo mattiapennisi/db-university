@@ -1,7 +1,7 @@
 SELECT * 
 FROM `students`
-WHERE `date_of_birth` > '1990-01-01' 
-AND `date_of_birth` < '1990-12-31';
+WHERE `date_of_birth` >= '1990-01-01' 
+AND `date_of_birth` <= '1990-12-31';
 
 SELECT *
 FROM `courses`
@@ -28,6 +28,6 @@ WHERE `level` = 'magistrale';
 SELECT COUNT('id')
 FROM `departments`;
 
-SELECT *
+SELECT COUNT('id')
 FROM `teachers`
 WHERE `phone` IS NULL;
